@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tembak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hai Cantik !</h1>
+        <div class="tenor-gif-embed" data-postid="21367561" data-share-method="host" data-aspect-ratio="1"
+            data-width="30%"><a href="https://tenor.com/view/hug-day-gif-21367561">Hug Day GIF</a>from <a
+                href="https://tenor.com/search/hug-gifs">Hug GIFs</a></div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1>Maukah Kamu Jadi Pacarku ?</h1>
+        <button id="btn_mau" onclick="alert('I LOVE YOU')">MAU</button>
+        <button id="btn_gamau" onclick="gamau(this)" style="position: fixed;">GAMAU</button>
+    </div>
+</body>
+<footer>
+    <div class="container" style="text-align: center;">
+        <p>This Code Was Written By ❤ Rifqi Charisma</p>
+    </div>
+</footer>
+<script>
+    function gamau(id){
+        var mau = document.getElementById('btn_mau');
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + 'px';
+        id.style.top = j + 'px';
+    }
+</script>
+</html>
